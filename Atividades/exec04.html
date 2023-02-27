@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+</head>
+<body>
+    <!-- 04) Após receber dia e mês, informe qual o signo correspondente a data informada. -->
+    <script>
+        let nome = prompt("Digite seu nome:")
+        let mesAniversario = prompt(`${nome}, Qual o seu mês de nascimento:(Em forma de número):`)
+        let diaNascimento = prompt(`${nome}, qual o dia que você nasceu:`)
+       
+        var mesJaneiro = ("Capricornio");
+        var mesFevereiro = ("Aquario");
+        var mesMarco = ("Peixes");
+        var mesAbril = ("Aries");
+        var mesMaio = ("Touro");
+        var mesJunho = ("Gemeos");
+        var mesJulho = ("Cancer");
+        var mesAgosto = ("Leao");
+        var mesSetembro = ("Virgem");
+        var mesOutubro = ("Libra");
+        var mesNovembro = ("Escorpiao");
+        var mesDezembro = ("Sagitario");
+
+
+        var mesDoSigno = 0;
+        var ano = 12;
+
+
+        for( i=0; i<12; i++){
+
+
+        if(mesAniversario == 1 && diaNascimento <= 19) {
+            console.log(`Seu signo é ${mesJaneiro}`);
+        }
+        else if(mesAniversario == 2 && diaNascimento <= 18) {
+            console.log(`Seu signo é ${mesFevereiro}`);
+        }
+        else if(mesAniversario == 3 && diaNascimento <= 20) {
+            console.log(`Seu signo é ${mesMarco}`);
+        }
+        else if(mesAniversario == 4 && diaNascimento <= 19) {
+            console.log(`Seu signo é ${mesAbril}`);
+        }
+        else if(mesAniversario == 5 && diaNascimento <= 20) {
+            console.log(`Seu signo é ${mesMaio}`);
+        }
+        else if(mesAniversario == 6 && diaNascimento <= 20) {
+            console.log(`Seu signo é ${mesJunho}`);
+        }
+        else if(mesAniversario == 7 && diaNascimento <= 22) {
+            console.log(`Seu signo é ${mesJulho}`);
+        }
+        else if(mesAniversario == 8 && diaNascimento <= 22) {
+            console.log(`Seu signo é ${mesAgosto}`);
+        }    
+        else if(mesAniversario == 9 && diaNascimento <= 22) {
+            console.log(`Seu signo é ${mesSetembro}`);
+        }
+        else if(mesAniversario == 10 && diaNascimento <= 22) {
+            console.log(`Seu signo é ${mesOutubro}`);
+        }
+        else if(mesAniversario == 11 && diaNascimento <= 21) {
+            console.log(`Seu signo é ${mesNovembro}`);
+        }
+        else if(mesAniversario == 12 && diaNascimento <= 21) {
+            console.log(`Seu signo é ${mesDezembro}`);
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05</title>
+</head>
+<body>
+    <script>
+        let nome, altura, peso, IMC
+        nome = prompt("Digite seu nome: ")
+        altura = parseInt(prompt('Digite sua em CM: '))
+        peso = parseFloat(prompt('Digite seu peso: '))
+
+
+        IMC = peso / (altura* altura)
+
+        if(IMC < 16){
+            console.log("Baixo peso . muito grave")
+        }else if(IMC >=16 && IMC < 17){
+            console.log("Baixo peso . grave")
+        }else if(IMC >=17 && IMC < 18.50){
+            console.log("Baixo peso")
+        }else if(IMC >=18.50 && IMC < 25){
+            console.log("Peso normal")
+        }else if(IMC >=25 && IMC <30){
+            console.log("Sobrepeso")
+        }else if(IMC >=30 && IMC <35){
+            console.log("Obesidade grau II")
+        }else if (IMC >=40){
+            console.log("Obesidade mórbida")
+        }else{
+            console.log("Dados incorretos")
+        }
+    </script>
+</body>
+</html>

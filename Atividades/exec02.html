@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+</head>
+<body>
+    <!-- 02) Faça um programa que receba três números e mostre-os em ordem crescente. Suponha que o usuário digitará três números diferentes. -->
+
+
+    <script>
+           const N1 = Number(prompt('N 1:'))
+           const N2 = Number(prompt('N 2:'))
+           const N3 = Number(prompt('N 3:'))
+     
+           let maior, menor, meio
+
+
+           if (N1 > N2 && N1 > N3){
+               maior = N1
+               
+               if (N2 > N3){
+                   menor = N2
+                   meio = N3
+               }else{
+                menor = N3
+                meio = N2
+               }
+           
+            }else if (N1 < N2 && N1 < N3){
+               menor = N1
+
+
+               if (N2 > N3){
+                 maior = N2
+                 meio = N3
+               }else{
+                maior = N3
+                meio = N2
+               }
+
+
+
+
+           }else{
+              meio = N1
+
+
+              if (N2 > N3){
+                 maior = N2
+                 menor = N3
+               }else{
+                maior = N3
+                menor = N2
+               }
+           }
+           
+           console.log('Menor:', menor)
+           console.log('Meio:', meio)
+           console.log('Maior:', maior)
+    </script>
+
+</body>
+</html>

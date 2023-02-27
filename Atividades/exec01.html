@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <!--  
+    01) Faça um algoritmo que leia o ano de nascimento de uma pessoa, calcule e mostre sua idade e, também, verifique e mostre se ela já tem idade para votar (16 anos ou mais) e para conseguir a carteira de Habilitação (18 anos ou mais)
+-->
+    <script>
+        let idadeAtual
+        let anoAtual = new Date()
+        let anoNascimento = parseInt(prompt("Digite o ano que você nasceu: "))
+
+
+        idadeAtual = anoAtual.getFullYear() - anoNascimento
+        console.log(idadeAtual)
+        if(idadeAtual >= 16 && idadeAtual < 18){
+            console.log("você pode fazer seu titulo, mas não sua carteira de motorista")
+        }else if(idadeAtual >=18){
+            console.log("você pode fazer seu titulo e sua carteira de motorista")
+        } else {
+            console.log("você pode fazer seu titulo e sua carteira de motorista")
+        }
+
+
+    </script>
+</body>
+</html>
